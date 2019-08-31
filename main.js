@@ -20,7 +20,7 @@ new Vue({
                 this.input3,
                 this.input4,
                 this.input5,
-                this.input6
+                this.input6,
             ]
 
             var num = Math.floor(Math.random() * itemsArray.length);
