@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div id="app">
+        <h2>{{ greeting }}</h2>
+
+        <div class='padding' style="padding: 10px"></div>
+
+        <p><mark>先輸入選項 ：<mark> </p>
+        <input type=text v-model="input1" style="padding: 2px" placeholder=" 選項 1" />
+        <input type=text v-model="input2" style="padding: 2px" placeholder=" 選項 2" />
+        <input type=text v-model="input3" style="padding: 2px" placeholder=" 選項 3" />
+        <input type=text v-model="input4" style="padding: 2px" placeholder=" 選項 4" />
+        <input type=text v-model="input5" style="padding: 2px" placeholder=" 選項 5" />
+        <input type=text v-model="input6" style="padding: 2px" placeholder=" 選項 6" />
+
+        <div class='padding' style="padding: 10px"></div>
+
+        <button class="btn btn-outline-primary btn-lg"  @click="changeGreeting">
+                抽啦 !
+        </button>
+
+    </div>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="./main.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+<style scoped>
+    #app {
+        padding-top:  10%;
+        padding-left: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    body {
+        background: #b7c2b1;
+    }
+
+    h2 {
+        text-align: center;
+        color: #555;
+        font-size: 50px;
+        font-family: sans-serif, helvetica;
+        text-shadow: rgb(234, 234, 237) 2px -2px;
+    }
+
+    .btn-lg {
+        padding: 25px 40px;
+        font-size: 50px;
+        border-radius: 25px;
+    }
+
+</style>
+
+</html>
